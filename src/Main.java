@@ -44,7 +44,7 @@ public class Main {
         }
 
         for (int i =0; i < count; i++) {
-            diff = Math.abs(array1[i] - array2[i]);//calcolo della sitanza in valore assoluto
+            diff = Math.abs(array1[i] - array2[i]);//calcolo della distanza in valore assoluto
             sommaDiff = sommaDiff + diff;
         }
 
