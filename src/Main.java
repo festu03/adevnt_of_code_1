@@ -7,8 +7,8 @@ public class Main {
         //creazione variabili
         int diff, sommaDiff;
         int count = 0;
-        int [] array1 = new int[0];
-        int [] array2 = new int[0];
+        int [] array1 = new int[1000];
+        int [] array2 = new int[1000];
         String nomeFile = "input.txt", linea;
 
         try {
@@ -28,6 +28,14 @@ public class Main {
             System.out.println("Errore nella lettura del file");
         }
 
+        System.out.println("Numeri prima colonna: ");
+        for (int i = 0; i < count; i++){
+            System.out.println(array1[i]);
+        }
 
+        System.out.println("Numeri seconda colonna: ");
+        for (int i = 0; i < count; i++){
+            System.out.println(array2[i]);
+        }
     }
 }
