@@ -1,4 +1,10 @@
-Advent of Code - 1 giorno 1 programma
+Advent of Code - 1 giorno
+
+1 PARTE:
 L'obiettivo del programma è calcolare la distanza tra due numeri che si trovano su due colonne diverse,
 dopo aver calcolato tutte le differenze bisogna sommarle.
 I numeri devono essere ordinati in modo crescente.
+
+2 PARTE:
+Contare qunate volte si ripete il numero della colonna di sinistra con quello della colonna di destra e moltiplicarlo con il numero contato,
+sommare i risultati di tutti i prodotti calcolati.
