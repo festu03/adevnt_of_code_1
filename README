@@ -1,3 +1,4 @@
-Advent of Code - 1 giorno
-L'obiettivo del programma è calcolare la differenza tra due numeri che si trovano su due colonne diverse,
+Advent of Code - 1 giorno 1 programma
+L'obiettivo del programma è calcolare la distanza tra due numeri che si trovano su due colonne diverse,
 dopo aver calcolato tutte le differenze bisogna sommarle.
+I numeri devono essere ordinati in modo crescente.
