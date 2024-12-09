@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         //creazione variabili
-        int diff = 0, sommaDiff = 0;
+        int diff = 0, sommaDiff = 0, prod = 0, sommaProd = 0;
         int count = 0;
         int [] array1 = new int[1000];
         int [] array2 = new int[1000];
@@ -48,6 +48,19 @@ public class Main {
             sommaDiff = sommaDiff + diff;
         }
 
-        System.out.println("La somma delle distanze e': " + sommaDiff);
+        System.out.println("\nLa somma delle distanze e': " + sommaDiff);
+
+        for(int i = 0; i < count; i++) {
+            int count2 = 0;
+            for (int k = 0; k < count; k++) {
+                if (array1[i] == array2[k]) {
+                   count2++;
+                }
+            }
+            prod = array1[i] * count2;
+            sommaProd = sommaProd + prod;
+        }
+
+        System.out.println("La somma dei prodotti della ripetizione dello stesso numero e': " + sommaProd);
     }
 }
