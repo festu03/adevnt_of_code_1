@@ -38,14 +38,16 @@ public class Main {
             System.out.println(array1[i]);
         }
 
-        System.out.println("Numeri seconda colonna: ");
+        System.out.println("\n\nNumeri seconda colonna: ");
         for (int i = 0; i < count; i++){
             System.out.println(array2[i]);
         }
 
-        for (int i =0; i < 3; i++) {
-            diff = array1[i] - array2[i];
+        for (int i =0; i < count; i++) {
+            diff = Math.abs(array1[i] - array2[i]);//calcolo della sitanza in valore assoluto
             sommaDiff = sommaDiff + diff;
         }
+
+        System.out.println("La somma delle distanze e': " + sommaDiff);
     }
 }
