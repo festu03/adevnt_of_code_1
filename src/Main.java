@@ -22,6 +22,7 @@ public class Main {
                 array2 [count] = Integer.parseInt(arrayNumeri[1]); //assegna il secondo numero
                 count++;
             }
+            in.close();
         }
         catch (FileNotFoundException e) {
             System.out.println("Errore nella lettura del file");
