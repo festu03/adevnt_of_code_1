@@ -7,19 +7,21 @@ public class Main {
         //creazione variabili
         int diff, sommaDiff;
         int count = 0;
-        String nomeFile = "input.txt";
+        int [] array1 = new int[0];
+        int [] array2 = new int[0];
+        String nomeFile = "input.txt", linea;
 
         try {
             Scanner in = new Scanner(new File(nomeFile));
-            //conteggio linee dentro al file "input.xt"
+            //conteggio righe dentro al file "input.xt e assegnazione numeri ad array"
             while(in.hasNextLine()) {
-                in.hasNextLine();
+                linea = in.nextLine();
+                //creazione dell'array dove inserire i numeri in String
+                String [] arrayNumeri = linea.split("\\s+"); //separa i numeri che hanno spazio
+                array1 [count] = Integer.parseInt(arrayNumeri[0]); //assegna il primo numero
+                array2 [count] = Integer.parseInt(arrayNumeri[1]); //assegna il secondo numero
                 count++;
             }
-
-            //creazione di due array
-            int [] array1 = new int[count];
-            int [] array2 = new int[count];
         }
         catch (FileNotFoundException e) {
             System.out.println("Errore nella lettura del file");
